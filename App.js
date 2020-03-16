@@ -12,12 +12,12 @@ const App = () => {
       <Scene key="picker"
           component={picker}
           title="picker"
-          //initial
+          initial
         />
         <Scene key="mainScreen"
           component={MainScreen}
           title="mainscreen"
-         initial
+       //  initial
         />
         <Scene
           key="details"

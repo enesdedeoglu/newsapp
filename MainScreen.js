@@ -34,7 +34,7 @@ export default class MainScreen extends React.Component {
   }
 
   fetchNews() {
-    getNews("http://newsapi.org/v2/top-headlines?country=tr&apiKey=79af8a0825ba4443adf9c1f76f8913cb")
+    getNews(this.props.url)
       .then(articles => this.setState({articles, refreshing: false}))
       .catch(() => this.setState({refreshing: false}));
   }
